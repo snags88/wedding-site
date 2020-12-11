@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: 'https://sherilynandseiji.com',
+  },
   plugins: [
     "gatsby-plugin-emotion",
     {
