@@ -9,11 +9,6 @@ const Head = () => (
     <title>Sherilyn & Seiji</title>
 
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,700,700i" rel="stylesheet" />
-
-    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/vendors/slick.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
   </Helmet>
 );
 
