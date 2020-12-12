@@ -98,6 +98,20 @@ a:focus {
 	text-decoration: none;
 }
 
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+}
+
 /* 1.1 Animations */
 @-webkit-keyframes pulse {
     0% {-webkit-transform: scale(0.2, 0.2); opacity: 0;}
@@ -250,7 +264,6 @@ a:focus {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
-  background-image: url("../images/hero.jpg");
 	padding: 50px 0;
 	color: #fff;
 }
@@ -353,25 +366,23 @@ a:focus {
 	position: absolute;
 	top: 0;
 	left: 0;
-    right: 0;
-    background: #fff;
-    text-align: center;
-    z-index: 999;
+  right: 0;
+  background: #fff;
+  text-align: center;
+  z-index: 999;
 }
 
 .mobile-nav__trigger {
 	position: absolute;
-    right: 10px;
-    top: 10px;
+  right: 10px;
+  top: 10px;
 }
 
 .mobile-nav-list {
-	display: none;
-	padding: 47px 0;
 	width: 90%;
 	max-width: 350px;
-    margin: 0 auto;
-    list-style: none;
+  margin: 0 auto;
+  list-style: none;
 }
 
 .mobile-nav-list__link {
