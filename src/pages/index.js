@@ -8,7 +8,7 @@ import AboutUs from 'components/home/aboutUs';
 import Counter from 'components/home/counter';
 import Quote from 'components/home/quote';
 import Friends from 'components/home/friends';
-import Rsvp from 'components/home/rsvp';
+import Rsvp from 'components/shared/rsvp';
 
 const IndexPage = () => (
   <Layout>
