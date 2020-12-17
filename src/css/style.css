@@ -98,6 +98,20 @@ a:focus {
 	text-decoration: none;
 }
 
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+}
+
 /* 1.1 Animations */
 @-webkit-keyframes pulse {
     0% {-webkit-transform: scale(0.2, 0.2); opacity: 0;}
@@ -250,7 +264,6 @@ a:focus {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
-  background-image: url("../images/hero.jpg");
 	padding: 50px 0;
 	color: #fff;
 }
@@ -353,25 +366,23 @@ a:focus {
 	position: absolute;
 	top: 0;
 	left: 0;
-    right: 0;
-    background: #fff;
-    text-align: center;
-    z-index: 999;
+  right: 0;
+  background: #fff;
+  text-align: center;
+  z-index: 999;
 }
 
 .mobile-nav__trigger {
 	position: absolute;
-    right: 10px;
-    top: 10px;
+  right: 10px;
+  top: 10px;
 }
 
 .mobile-nav-list {
-	display: none;
-	padding: 47px 0;
 	width: 90%;
 	max-width: 350px;
-    margin: 0 auto;
-    list-style: none;
+  margin: 0 auto;
+  list-style: none;
 }
 
 .mobile-nav-list__link {
@@ -588,101 +599,6 @@ a:focus {
 	}
 }
 
-
-/*============== 7. Friends ==============*/
-.friends {
-	margin: 100px 0;
-}
-
-.friends__title {
-	font-size: 24px;
-	text-align: center;
-	margin-bottom: 60px;
-}
-
-@media(min-width: 992px) {
-	.friends {
-		margin: 100px 0;
-	}
-}
-
-/* 7.1. Slider */
-.slider-list {
-	list-style: none;
-	margin-bottom: 25px;
-}
-
-.slider-list .slick-list {
-	padding-top: 25px!important; /* Because of margin-top: -25 on current slick item */
-}
-
-.slider-list__item {
-	text-align: center;
-	transition: transform .4s ease;
-	-webkit-transition: transform .4s ease;
-}
-
-.slider-list__item.slick-current {
-	transform: translateY(-25px);
-	-webkit-transform: translateY(-25px);
-	-ms-transform: translateY(-25px);
-}
-
-.slider-list__item img {
-	width: 92%;
-	max-width: 180px;
-	border-radius: 50%;
-	margin-bottom: 20px;
-	display: inline!important;
-	transition: box-shadow .4s ease;
-	-webkit-transition: box-shadow .4s ease;
-}
-
-.slider-list__item p {
-	font-size: 20px;
-	margin-bottom: 0px;
-	display: none;
-}
-
-.slider-list__item.slick-current img {
-	-webkit-box-shadow: 4px 21px 29px -8px rgba(161,161,161,1);
-	-moz-box-shadow: 4px 21px 29px -8px rgba(161,161,161,1);
-	box-shadow: 4px 21px 29px -8px rgba(161,161,161,1);
-}
-
-.slider-list__item.slick-current p {
-	display: block;
-}
-
-.slider-arrows {
-	justify-content: center;
-}
-
-.slider-arrows .icon {
-	padding: 0 5px;
-	margin-top: 5px;
-}
-
-.slider-arrow {
-	cursor: pointer;
-}
-
-.slider-arrow svg path {
-	stroke: #b1b1b1;
-	transition: stroke .4s ease;
-	-webkit-transition: stroke .4s ease;
-}
-
-.slider-arrow:hover svg path {
-	stroke: #ffd7d7;
-}
-
-@media(min-width: 768px) {
-	.slider-list__item img {
-		max-width: 200px;
-	}
-}
-
 /*============== 8. Quote ==============*/
 .quote {
 	padding: 90px 0;
@@ -767,7 +683,7 @@ a:focus {
 
 /*============== 10. RSVP ==============*/
 .rsvp {
-	background-image: url("../images/rsvp-bg.jpg"); /* Change to your RSVP image here */
+	background-image: url("../images/rsvp-bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 90px 0;
@@ -891,9 +807,8 @@ a:focus {
 	-webkit-transition: background-color .3s ease;
 }
 
-.rsvp-form-submit .icon {
-	display: none;
-	position: absolute;
+.rsvp-form-submit:hover {
+  opacity: 0.9;
 }
 
 .rsvp-confirmation {
@@ -920,6 +835,7 @@ a:focus {
 	.rsvp-form-submit {
 		margin-top: 50px;
 		max-width: 300px;
+    bottom: 36px;
 	}
 
 	.rsvp-form-submit .icon:first-of-type {

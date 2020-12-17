@@ -9,6 +9,7 @@ import aos from 'css/aos.css';
 import style from 'css/style.css';
 
 import Head from './head';
+import Footer from './footer';
 
 const Layout = ({ children }) => {
   useEffect(() => {
@@ -24,6 +25,7 @@ const Layout = ({ children }) => {
     <>
       <Head />
       { children }
+      <Footer />
     </>
   );
 }
