@@ -1,18 +1,18 @@
 import React from 'react';
 
 import Layout from 'components/layout';
-import LocationHeader from 'components/location/header';
+import MemoriesHeader from 'components/memories/header';
 import DesktopNav from 'components/shared/desktopNav';
 import MobileNav from 'components/shared/mobileNav';
-import LocationMain from 'components/location/main';
+import MemoriesMain from 'components/memories/main';
 
-const LocationPage = () => (
+const MemoriesPage = () => (
   <Layout>
-    <LocationHeader />
+    <MemoriesHeader />
     <DesktopNav />
     <MobileNav />
-    <LocationMain />
+    <MemoriesMain />
   </Layout>
 );
 
-export default LocationPage;
+export default MemoriesPage;
