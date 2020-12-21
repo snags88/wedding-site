@@ -11,4 +11,3 @@ const LocationHeader = () => (
 );
 
 export default LocationHeader;
-
