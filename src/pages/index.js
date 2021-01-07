@@ -22,7 +22,7 @@ const IndexPage = () => (
       </div>
     </div>
     <Quote />
-    <Friends />
+    {/* <Friends /> */}
     <Rsvp />
   </Layout>
 );

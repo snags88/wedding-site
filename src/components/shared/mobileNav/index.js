@@ -34,7 +34,7 @@ const MobileNav = () => {
             <li style={{paddingTop: '47px'}}><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/story">Our Story</NavLink></li>
             <li><NavLink to="/location">When & Where</NavLink></li>
-            <li><NavLink to="/memories">Memories</NavLink></li>
+            <li><NavLink to="/photos">Photos</NavLink></li>
             <li style={{paddingBottom: '47px'}}><NavLink to="/rsvp">RSVP</NavLink></li>
           </ul>
         </div>

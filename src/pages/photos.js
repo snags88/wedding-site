@@ -6,7 +6,7 @@ import DesktopNav from 'components/shared/desktopNav';
 import MobileNav from 'components/shared/mobileNav';
 import MemoriesMain from 'components/memories/main';
 
-const MemoriesPage = () => (
+const PhotosPage = () => (
   <Layout>
     <MemoriesHeader />
     <DesktopNav />
@@ -15,4 +15,4 @@ const MemoriesPage = () => (
   </Layout>
 );
 
-export default MemoriesPage;
+export default PhotosPage;

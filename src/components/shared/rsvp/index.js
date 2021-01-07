@@ -1,15 +1,20 @@
 import React from 'react';
 
-const Rsvp = () => {
+import { RsvpSection } from './style';
+
+const Rsvp = ({ isRsvpPage }) => {
   return (
-    <section className="rsvp" id="rsvp">
+    <RsvpSection id="rsvp" noBackground={isRsvpPage}>
       <div className="container">
         <div className="row">
           <div className="col-xl-10 offset-xl-1">
             <div className="rsvp-box u-bg-white">
               <div>
                 <div className="text-center">
-                  <h3 className="rsvp-box__title u-font-script">be our guest!</h3>
+                  {!isRsvpPage
+                      ? <h3 className="rsvp-box__title u-font-script">be our guest!</h3>
+                      : <h3 className="rsvp-box__title">RSVP</h3>
+                  }
                   <p className="rsvp-box__subtitle">Please confirm your arrival by <mark className="font-weight-bold">March 14, 2021</mark></p>
                 </div>
                 <form method="POST" className="rsvp-form" id="rsvp-form" action="php/rsvp.php">
@@ -61,7 +66,7 @@ const Rsvp = () => {
           </div>
         </div>
       </div>
-    </section>
+    </RsvpSection>
   );
 };
 
