@@ -2,7 +2,6 @@ import React from 'react';
 import dayjs from 'dayjs';
 
 import Header from 'components/shared/header';
-import whiteWreath from 'images/wreath-white.svg';
 import { WEDDING_DATE } from 'consts';
 
 import { TextContainer } from './style';
