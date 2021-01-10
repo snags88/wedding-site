@@ -1,16 +1,18 @@
 import React from 'react';
-import { css } from '@emotion/react'
 
-const Header = ({ imgSrc, isSmall, children }) => {
-  const heroSizeClassName = isSmall ? 'hero--small' : '';
+import { HeaderContainer } from './style';
+
+const Header = ({ imgSrc, isSmall, isVerticalCentered, children }) => {
   return (
     <header>
-      <div
-        className={`hero ${heroSizeClassName} d-flex align-items-center justify-content-center`}
-        css={css`background-image: url(${imgSrc});`}
+      <HeaderContainer
+        isSmall={isSmall}
+        isVerticalCentered={isVerticalCentered}
+        imgSrc={imgSrc}
+        className='d-flex align-items-center justify-content-center'
       >
         { children }
-      </div>
+      </HeaderContainer>
     </header>
   );
 };

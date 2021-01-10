@@ -11,7 +11,7 @@ const RsvpPage = () => (
     <RsvpHeader />
     <DesktopNav />
     <MobileNav />
-    <Rsvp />
+    <Rsvp isRsvpPage/>
   </Layout>
 );
 
