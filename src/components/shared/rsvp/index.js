@@ -6,7 +6,7 @@ import {
 } from './style';
 
 const Rsvp = ({ isRsvpPage }) => {
-  const formName = 'rsvp-form-test';
+  const formName = 'rsvp-form';
 
   return (
     <RsvpSection id='rsvp' noBackground={isRsvpPage}>
