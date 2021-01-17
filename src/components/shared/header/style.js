@@ -1,14 +1,17 @@
-import styled from '@emotion/styled';
+import { css } from '@emotion/react';
 
-export const HeaderContainer = styled.div`
+export const headerStyle = (isSmall, isVerticalCentered) => css`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 	background-size: cover;
 	background-repeat: no-repeat;
-  background-position: ${({ isVerticalCentered }) => isVerticalCentered ? 'center' : 'top'} center;
-  padding: ${({ isSmall }) => isSmall ? '100px' : '50px'} 0;
+  background-position: ${isVerticalCentered ? 'center' : 'top'} center;
+  padding: ${isSmall ? '100px' : '50px'} 0;
 	color: #fff;
-  background-image: url(${({imgSrc}) => imgSrc});
 
   @media(min-width: 992px) {
-    min-height: ${({ isSmall }) => isSmall ? 'auto' : '90vh'};
+    min-height: ${isSmall ? 'auto' : '90vh'};
   }
 `;
