@@ -1,18 +1,18 @@
 import React from 'react';
+import BackgroundImage from 'gatsby-background-image'
 
-import { HeaderContainer } from './style';
+import { headerStyle } from './style';
 
-const Header = ({ imgSrc, isSmall, isVerticalCentered, children }) => {
+const Header = ({ imageData, isSmall, isVerticalCentered, children }) => {
   return (
     <header>
-      <HeaderContainer
-        isSmall={isSmall}
-        isVerticalCentered={isVerticalCentered}
-        imgSrc={imgSrc}
-        className='d-flex align-items-center justify-content-center'
+      <BackgroundImage
+        Tag='div'
+        fluid={imageData}
+        css={headerStyle(isSmall, isVerticalCentered)}
       >
         { children }
-      </HeaderContainer>
+      </BackgroundImage>
     </header>
   );
 };
