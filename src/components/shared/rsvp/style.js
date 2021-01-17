@@ -8,3 +8,7 @@ export const RsvpSection = styled.section`
 	background-repeat: no-repeat;
 	padding: 90px 0;
 `;
+
+export const HiddenTextInput = styled.input`
+  display: none;
+`;
