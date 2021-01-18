@@ -1,5 +1,4 @@
 import React from 'react';
-import { graphql } from 'gatsby'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import IosHeart from 'react-ionicons/lib/IosHeart'
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
