@@ -16,9 +16,9 @@ export const HiddenTextInput = styled.input`
 export const FormContentGrid = styled.div`
   display: grid;
   grid-template-columns: 100%;
-  column-gap: 24px;
 
   @media(min-width: 768px) {
-    grid-template-columns: 50% 50%;
+    column-gap: 24px;
+    grid-template-columns: calc(50% - 12px) calc(50% - 12px);
   }
 `;
