@@ -22,7 +22,14 @@ const MobileNav = () => {
     >
       {({ setCollapsibleElement }) => (
         <div className="mobile-nav d-md-none">
-          <div className="mobile-nav__trigger" onClick={onToggleClick}>
+          <div
+            className="mobile-nav__trigger"
+            role="switch"
+            tabindex="-1"
+            onClick={onToggleClick}
+            onKeyPress={onToggleClick}
+            aria-checked={isOpen}
+          >
             <button>
               { isOpen
                   ? <IosClose color='black' className="icon icon--md"/>
