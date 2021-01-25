@@ -381,6 +381,11 @@ button {
 
 
 @media(min-width: 992px) {
+  .intro-content {
+    display: flex;
+    align-items: center;
+  }
+
 	.intro-content__col {
 		width: 50%;
 		position: relative;
