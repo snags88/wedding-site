@@ -14,12 +14,15 @@ const LocationMain = ({ data }) => (
             <p>The address for the venue is <a href="https://www.google.com/maps/place/59-864+Kamehameha+Hwy,+Haleiwa,+HI+96712/@21.6400329,-158.0622667,17z/data=!3m1!4b1!4m5!3m4!1s0x7c0059901950dca9:0xf4864239c3b12325!8m2!3d21.6400329!4d-158.060078" target="_blank" rel="noreferrer">59-864 Kamehameha Hwy, Haleiwa, HI 96712</a> and free parking will be available at the venue.</p>
             <p>The attire will be semi-formal.</p>
 					</div>
-          <GatsbyImage image={getImage(data.location1)} alt="Pikake Pavilion at night lit up with string lights" className="location__img location__img--sm ml-auto"/>
-          <GatsbyImage image={getImage(data.location2)} alt="Table set inside of Pikake Pavilion" className="location__img"/>
+          <GatsbyImage image={getImage(data.location1)} alt="Pikake Pavilion at night lit up with string lights" className="location__img location__img--sm ml-auto d-none d-md-block"/>
+          <GatsbyImage image={getImage(data.location2)} alt="Table set inside of Pikake Pavilion" className="location__img d-none d-md-block"/>
+          <GatsbyImage image={getImage(data.location3)} alt="Main Lawn with empty chairs for the ceremony" className="location__img location__img--sm d-md-none"/>
 				</div>
 
 				<div className="col-md-6">
-          <GatsbyImage image={getImage(data.location3)} alt="Main Lawn with empty chairs for the ceremony" className="location__img location__img--sm"/>
+          <GatsbyImage image={getImage(data.location3)} alt="Main Lawn with empty chairs for the ceremony" className="location__img location__img--sm d-none d-md-block"/>
+          <GatsbyImage image={getImage(data.location1)} alt="Pikake Pavilion at night lit up with string lights" className="location__img location__img--sm ml-auto d-md-none"/>
+          <GatsbyImage image={getImage(data.location2)} alt="Table set inside of Pikake Pavilion" className="location__img d-md-none"/>
 					<div className="location__text location__text--sm u-bg-grey">
 						<h6 className="text-uppercase">Reception - 18:30</h6>
 						<h3>Waimea Valley - Pikake Pavilion</h3>
