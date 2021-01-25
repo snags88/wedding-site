@@ -1,11 +1,16 @@
 import React from 'react';
 import IosHeart from 'react-ionicons/lib/IosHeart'
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 import { PRIMARY_COLOR_HEX } from 'consts';
 
 import { STORY_CONTENT } from '../content';
 
-const StoryMain = () => {
+const StoryMain = ({ data }) => {
+  const timeline1Img = getImage(data.timeline1);
+  const timeline2Img = getImage(data.timeline2);
+  const timeline3Img = getImage(data.timeline3);
+
   return (
     <section className="story" id="story">
       <div className="container">
@@ -21,14 +26,16 @@ const StoryMain = () => {
                   </h4>
                   <p>{STORY_CONTENT.part1.body}</p>
                 </div>
-                <img src={STORY_CONTENT.part2.img}  alt={STORY_CONTENT.part2.title} data-aos="zoom-in-right"/>
+
+                <GatsbyImage image={timeline2Img} alt={STORY_CONTENT.part2.title} className="d-none d-md-block"/>
+                <GatsbyImage image={timeline1Img} alt={STORY_CONTENT.part1.title} className="d-md-none"/>
                 {/*Only visible on mobile device*/}
-                <div className="story-timeline__text d-md-none" data-aos="zoom-in-right">
+                <div className="story-timeline__text d-md-none">
                   <h4>{STORY_CONTENT.part2.title}</h4>
                   <p>{STORY_CONTENT.part2.body}</p>
                 </div>
                 {/*Only visible on desktop device*/}
-                <div className="story-timeline__text d-none d-md-block" data-aos="zoom-in-right">
+                <div className="story-timeline__text d-none d-md-block">
                   <h4>
                     <IosHeart color={PRIMARY_COLOR_HEX} className="icon icon--sm icon--primary u-bg-white d-none d-md-block"/>
                     {STORY_CONTENT.part3.title}
@@ -38,9 +45,10 @@ const StoryMain = () => {
               </div>
 
               <div className="story-timeline__col story-timeline__col--right">
-                <img src={STORY_CONTENT.part1.img} alt={STORY_CONTENT.part1.title} data-aos="zoom-in-left"/>
+                <GatsbyImage image={timeline1Img} alt={STORY_CONTENT.part1.title} className="d-none d-md-block" />
+                <GatsbyImage image={timeline2Img} alt={STORY_CONTENT.part2.title} className="d-md-none"/>
                 {/*Only visible on desktop devices*/}
-                <div className="story-timeline__text d-none d-md-block" data-aos="zoom-in-left">
+                <div className="story-timeline__text d-none d-md-block">
                   <h4>
                     {STORY_CONTENT.part2.title}
                     <IosHeart color={PRIMARY_COLOR_HEX} className="icon icon--sm icon--primary u-bg-white d-none d-md-block"/>
@@ -48,11 +56,11 @@ const StoryMain = () => {
                   <p>{STORY_CONTENT.part2.body}</p>
                 </div>
                 {/*Only visible on mobile device*/}
-                <div className="story-timeline__text d-md-none" data-aos="zoom-in-left">
+                <div className="story-timeline__text d-md-none">
                   <h4>{STORY_CONTENT.part3.title}</h4>
                   <p>{STORY_CONTENT.part3.body}</p>
                 </div>
-                <img src={STORY_CONTENT.part3.img} alt={STORY_CONTENT.part3.title} data-aos="zoom-in-left"/>
+                <GatsbyImage image={timeline3Img} alt={STORY_CONTENT.part3.title} />
               </div>
             </div>
           </div>

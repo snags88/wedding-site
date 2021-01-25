@@ -25,7 +25,7 @@ const MobileNav = () => {
           <div
             className="mobile-nav__trigger"
             role="switch"
-            tabindex="-1"
+            tabIndex="-1"
             onClick={onToggleClick}
             onKeyPress={onToggleClick}
             aria-checked={isOpen}
