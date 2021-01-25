@@ -333,6 +333,14 @@ button {
 	position: absolute;
   right: 10px;
   top: 10px;
+  border-radius: 50%;
+  padding: 5px;
+  transition: background-color 0.5s ease;
+  background-color: none;
+}
+
+.mobile-nav__trigger--bg {
+  background-color: #C0C0C0;
 }
 
 .mobile-nav-list {

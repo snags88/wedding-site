@@ -23,7 +23,7 @@ const MobileNav = () => {
       {({ setCollapsibleElement }) => (
         <div className="mobile-nav d-md-none">
           <div
-            className="mobile-nav__trigger"
+            className={`mobile-nav__trigger ${isOpen ? '' : 'mobile-nav__trigger--bg'}`}
             role="switch"
             tabIndex="-1"
             onClick={onToggleClick}
