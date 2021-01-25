@@ -16,7 +16,6 @@ const MemoriesMain = ({ data }) => {
   const memory9 = getImage(data.memory9);
   const memory10 = getImage(data.memory10);
   const memory11 = getImage(data.memory11);
-  const memory12 = getImage(data.memory12);
   const memory13 = getImage(data.memory13);
   const memory14 = getImage(data.memory14);
   const memory15 = getImage(data.memory15);
@@ -51,7 +50,6 @@ const MemoriesMain = ({ data }) => {
                 <GatsbyImage image={memory9} alt="memory9" className="memories__img"/>
                 <GatsbyImage image={memory10} alt="memory10" className="memories__img"/>
                 <GatsbyImage image={memory11} alt="memory11" className="memories__img"/>
-                <GatsbyImage image={memory12} alt="memory12" className="memories__img"/>
                 <GatsbyImage image={memory13} alt="memory13" className="memories__img"/>
                 <GatsbyImage image={memory14} alt="memory14" className="memories__img"/>
                 <GatsbyImage image={memory15} alt="memory15" className="memories__img"/>
