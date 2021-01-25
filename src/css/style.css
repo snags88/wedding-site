@@ -762,18 +762,6 @@ button {
 		padding: 50px 40px 110px;
 	}
 
-	.rsvp-form__left {
-		width: 45%;
-	}
-
-	.rsvp-form__right {
-		width: 49%;
-	}
-
-	.rsvp-form select {
-		margin-bottom: 0;
-	}
-
 	.rsvp-form-submit {
 		margin-top: 50px;
 		max-width: 300px;

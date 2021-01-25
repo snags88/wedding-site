@@ -12,3 +12,13 @@ export const RsvpSection = styled.section`
 export const HiddenTextInput = styled.input`
   display: none;
 `;
+
+export const FormContentGrid = styled.div`
+  display: grid;
+  grid-template-columns: 100%;
+
+  @media(min-width: 768px) {
+    column-gap: 24px;
+    grid-template-columns: calc(50% - 12px) calc(50% - 12px);
+  }
+`;
