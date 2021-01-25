@@ -28,10 +28,6 @@ export const query = graphql`
         gatsbyImageData(layout: FLUID, maxWidth: 580, placeholder: BLURRED)
       }
     }
-    memory3: file(relativePath: { eq: "memories/memory3.jpg" }) { childImageSharp {
-        gatsbyImageData(layout: FLUID, maxWidth: 580, placeholder: BLURRED)
-      }
-    }
     memory4: file(relativePath: { eq: "memories/memory4.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FLUID, maxWidth: 580, placeholder: BLURRED)
@@ -67,22 +63,7 @@ export const query = graphql`
         gatsbyImageData(layout: FLUID, maxWidth: 580, placeholder: BLURRED)
       }
     }
-    memory12: file(relativePath: { eq: "memories/memory12.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(layout: FLUID, maxWidth: 580, placeholder: BLURRED)
-      }
-    }
     memory13: file(relativePath: { eq: "memories/memory13.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(layout: FLUID, maxWidth: 580, placeholder: BLURRED)
-      }
-    }
-    memory14: file(relativePath: { eq: "memories/memory14.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(layout: FLUID, maxWidth: 580, placeholder: BLURRED)
-      }
-    }
-    memory15: file(relativePath: { eq: "memories/memory15.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FLUID, maxWidth: 580, placeholder: BLURRED)
       }
@@ -98,11 +79,6 @@ export const query = graphql`
       }
     }
     memory18: file(relativePath: { eq: "memories/memory18.jpg" }) {
-      childImageSharp {
-        gatsbyImageData(layout: FLUID, maxWidth: 580, placeholder: BLURRED)
-      }
-    }
-    memory19: file(relativePath: { eq: "memories/memory19.jpg" }) {
       childImageSharp {
         gatsbyImageData(layout: FLUID, maxWidth: 580, placeholder: BLURRED)
       }

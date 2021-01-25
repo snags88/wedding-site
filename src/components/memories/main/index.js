@@ -8,7 +8,6 @@ import { PRIMARY_COLOR_HEX } from 'consts';
 const MemoriesMain = ({ data }) => {
   const memory1 = getImage(data.memory1);
   const memory2 = getImage(data.memory2);
-  const memory3 = getImage(data.memory3);
   const memory4 = getImage(data.memory4);
   const memory5 = getImage(data.memory5);
   const memory6 = getImage(data.memory6);
@@ -17,12 +16,9 @@ const MemoriesMain = ({ data }) => {
   const memory10 = getImage(data.memory10);
   const memory11 = getImage(data.memory11);
   const memory13 = getImage(data.memory13);
-  const memory14 = getImage(data.memory14);
-  const memory15 = getImage(data.memory15);
   const memory16 = getImage(data.memory16);
   const memory17 = getImage(data.memory17);
   const memory18 = getImage(data.memory18);
-  const memory19 = getImage(data.memory19);
 
   return (
     <section className="memories">
@@ -42,7 +38,6 @@ const MemoriesMain = ({ data }) => {
               <Masonry gutter="0">
                 <GatsbyImage image={memory1} alt="memory1" className="memories__img"/>
                 <GatsbyImage image={memory2} alt="memory2" className="memories__img"/>
-                <GatsbyImage image={memory3} alt="memory3" className="memories__img"/>
                 <GatsbyImage image={memory4} alt="memory4" className="memories__img"/>
                 <GatsbyImage image={memory5} alt="memory5" className="memories__img"/>
                 <GatsbyImage image={memory6} alt="memory6" className="memories__img"/>
@@ -51,12 +46,9 @@ const MemoriesMain = ({ data }) => {
                 <GatsbyImage image={memory10} alt="memory10" className="memories__img"/>
                 <GatsbyImage image={memory11} alt="memory11" className="memories__img"/>
                 <GatsbyImage image={memory13} alt="memory13" className="memories__img"/>
-                <GatsbyImage image={memory14} alt="memory14" className="memories__img"/>
-                <GatsbyImage image={memory15} alt="memory15" className="memories__img"/>
                 <GatsbyImage image={memory16} alt="memory16" className="memories__img"/>
                 <GatsbyImage image={memory17} alt="memory17" className="memories__img"/>
                 <GatsbyImage image={memory18} alt="memory18" className="memories__img"/>
-                <GatsbyImage image={memory19} alt="memory19" className="memories__img"/>
               </Masonry>
             </ResponsiveMasonry>
           </div>
