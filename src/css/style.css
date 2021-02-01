@@ -333,6 +333,14 @@ button {
 	position: absolute;
   right: 10px;
   top: 10px;
+  border-radius: 50%;
+  padding: 5px;
+  transition: background-color 0.5s ease;
+  background-color: none;
+}
+
+.mobile-nav__trigger--bg {
+  background-color: #C0C0C0;
 }
 
 .mobile-nav-list {
@@ -362,21 +370,11 @@ button {
 
 /*============== 5. Intro ==============*/
 .intro {
-	margin: 80px 0 120px;
-}
-
-.intro-content .icon {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	z-index: 9;
+	padding: 80px 0 120px;
 }
 
 .intro-content__text {
-	padding: 30px;
+	margin: 30px;
 }
 
 .intro-content__text h4 {
@@ -389,25 +387,20 @@ button {
 	margin: 5px;
 }
 
-.intro-content__img {
-	height: 260px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: top center;
-}
 
 @media(min-width: 992px) {
+  .intro-content {
+    display: flex;
+    align-items: center;
+  }
+
 	.intro-content__col {
 		width: 50%;
 		position: relative;
 	}
 
-	.intro-content__img {
-		height: 360px;
-	}
-
 	.intro-content__text {
-		padding: 35px 60px;
+		margin: 35px 60px;
 	}
 }
 
@@ -597,7 +590,7 @@ button {
 
 .location__text h6 {
 	color: #5f5f55;
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .location__text h3 {
