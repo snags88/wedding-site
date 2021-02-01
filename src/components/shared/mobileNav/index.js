@@ -23,7 +23,7 @@ const MobileNav = () => {
       {({ setCollapsibleElement }) => (
         <div className="mobile-nav d-md-none">
           <div
-            className="mobile-nav__trigger"
+            className={`mobile-nav__trigger ${isOpen ? '' : 'mobile-nav__trigger--bg'}`}
             role="switch"
             tabIndex="-1"
             onClick={onToggleClick}
@@ -42,7 +42,10 @@ const MobileNav = () => {
             <li><NavLink to="/story">Our Story</NavLink></li>
             <li><NavLink to="/location">When & Where</NavLink></li>
             <li><NavLink to="/photos">Photos</NavLink></li>
-            <li style={{paddingBottom: '47px'}}><NavLink to="/rsvp">RSVP</NavLink></li>
+            <li><NavLink to="/rsvp">RSVP</NavLink></li>
+            <li style={{paddingBottom: '47px'}}>
+              <a href="https://www.zola.com/registry/sherilynandseiji" className="mobile-nav-list__link" target="_blank" rel="noreferrer">Registry</a>
+            </li>
           </ul>
         </div>
       )}
