@@ -14,6 +14,7 @@ const DesktopNav = () => {
               <li><NavLink to="/location">When & Where</NavLink></li>
               <li><NavLink to="/photos">Photos</NavLink></li>
               <li><NavLink to="/rsvp">RSVP</NavLink></li>
+              <li><a href="https://www.zola.com/registry/sherilynandseiji" className="nav-list__link" target="_blank" rel="noreferrer">Registry</a></li>
             </ul>
           </div>
         </div>
