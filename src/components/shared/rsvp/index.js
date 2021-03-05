@@ -21,7 +21,7 @@ const Rsvp = ({ isRsvpPage }) => {
                       ? <h3 className='rsvp-box__title u-font-script'>be our guest!</h3>
                       : <h3 className='rsvp-box__title'>RSVP</h3>
                   }
-                  <p className='rsvp-box__subtitle'>Please confirm your arrival by <mark className='font-weight-bold'>March 14, 2021</mark></p>
+                  <p className='rsvp-box__subtitle'>Please confirm your arrival by <mark className='font-weight-bold'>May 25, 2021</mark></p>
                 </div>
                 <form
                   method='POST'
