@@ -32,7 +32,7 @@ const Info = ({ data }) => (
                 <p>As guidelines change, we will be updating this website so please come back to check on the latest news!</p>
                 <p>On a different note, we have two new items for the wedding:</p>
                   <GuidelineList>
-                    <li>We've decided to run a shuttle bus between Waikiki (where you'll find most accommodation options) and Waimea Valley for our out-of-town guests. More info on the shuttle will be posted to the website (e.g., pickup/dropoff location, departure time).</li>
+                    <li>We've decided to run a shuttle bus between Waikiki (where you'll find most accommodation options) and Waimea Valley for our out-of-town guests. The shuttle will depart at 2:00pm Hyatt Regency Waikiki Beach Resort And Spa in Waikiki. It will depart Waimea Valley at 10:00pm and dropoff at Hyatt Regency Waikiki Beach Resort And Spa in Waikiki.</li>
                     <li>We'll also be live streaming our wedding since so we can be internet celebrities for a day! More details to come.</li>
                   </GuidelineList>
                 <p>The best way to get updated is to fill out the RSVP form below. We hope to be able to see you all for our celebration ❤️ .</p>
