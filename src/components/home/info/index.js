@@ -33,7 +33,6 @@ const Info = ({ data }) => (
                 <p>On a different note, we have two new items for the wedding:</p>
                   <GuidelineList>
                     <li>We've decided to run a shuttle bus between Waikiki (where you'll find most accommodation options) and Waimea Valley for our out-of-town guests. The shuttle will depart at 2:00pm Hyatt Regency Waikiki Beach Resort And Spa in Waikiki. It will depart Waimea Valley at 10:00pm and dropoff at Hyatt Regency Waikiki Beach Resort And Spa in Waikiki.</li>
-                    <li>We'll also be live streaming our wedding since so we can be internet celebrities for a day! More details to come.</li>
                   </GuidelineList>
                 <p>The best way to get updated is to fill out the RSVP form below. We hope to be able to see you all for our celebration ❤️ .</p>
                 <LetterFromContent>Sherilyn & Seiji</LetterFromContent>
